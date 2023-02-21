@@ -8,27 +8,42 @@
     <link rel="stylesheet" href="style.css">
     <audio src="/audio.mp3"></audio>
     <script>
-        window.addEventListener("DOMContentLoaded", event => {
-            const audio = document.querySelector("audio");
-            audio.volume = 1;
-            audio.play();
-        });
+    function showrickroll() {
+    var rickroll = document.getElementById("rickroll");
+    var cookies = document.getElementById("cookies");
+    rickroll.style.display = "block";
+    cookies.style.display = "none";
+    const audio = document.querySelector("audio");
+    audio.volume = 1;
+    audio.play();
+    }
     </script>
-    <title>RickRoll</title>
+    <title>Website</title>
 </head>
 
-<body onmouseover="audio.play()">
+<body>
+    
+    <div class="cookies" id="cookies">
+        <h2>Cookies:</h2>
+        <p>This website uses cookies to provide necessary website functionality and make it posible to share content.
+           <br>By using our website, you agree to our Privacy Policy and our Cookies Policy.
+        </p>
+        <button onclick="showrickroll()">Accept</button>
+    </div>
+
+        <div id="rickroll">
     <img src="img/rickroll-roll.gif" alt="RickRoll" class="RickRollIMG">
     <h1>YOU'VE BEEN RICKROLLED </h1>
     <div class="links">
-        <a href="Link-Ziel"><b>Wikipedia</b></a>
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+        <a href="https://en.wikipedia.org/wiki/Rickrolling"><b>Wikipedia</b></a>
+        <!--  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
             data-text="RickRoll your friends at:" data-via="TizianSch" data-hashtags="rickroll"
             data-show-count="false"><b>Tweet</b>
         </a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <a href="Link-Ziel"><b>GitHub</b></a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+        <a href="https://github.com/TizianSchoenijahn/RickRoll"><b>GitHub</b></a>
     </div>
+</div>
 </body>
 
 </html>
