@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <audio src="/audio.mp3"></audio>
+    <script>
+        window.addEventListener("DOMContentLoaded", event => {
+            const audio = document.querySelector("audio");
+            audio.volume = 1;
+            audio.play();
+        });
+    </script>
+    <title>RickRoll</title>
+</head>
+
+<body onload="audio.play()">
+    <img src="/img/rickroll-roll.gif" alt="RickRoll" class="RickRollIMG">
+    <h1>YOU'VE BEEN RICKROLLED </h1>
+    <div class="links">
+        <a href="Link-Ziel"><b>Wikipedia</b></a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            class="twitter-share-button" data-text="RickRoll your friends at:" data-via="TizianSch"
+            data-hashtags="rickroll" data-show-count="false"><b>Tweet</b>
+        </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a href="Link-Ziel"><b>GitHub</b></a>
+    </div>
+</body>
+
+</html>

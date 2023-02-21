@@ -1,0 +1,122 @@
+body{
+    background-color: #2c2c2c;
+    color:rgb(187, 187, 187);
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: var(--body-size);
+}
+    
+    @media (min-width: 320px) and (max-width: 600px) {
+    
+      :root{
+      
+        --body-size: 90%;
+        --rickrolltext: 6.5vh;
+        --rickrollimg: 90%;
+    
+        /* Mobile CSS */
+      }
+      }
+    
+      @media (min-width: 600px) and (max-width: 750px) {
+    
+        :root{
+      
+          --body-size: 70%;
+          --rickrolltext: 9vw;
+          --rickrollimg: 90%;
+        }
+      
+        /* middle */
+      
+      }
+
+      @media (min-width: 750px) and (max-width: 1000px) {
+    
+        :root{
+      
+          --body-size: 70%;
+          --rickrolltext: 7vw;
+          --rickrollimg: 70%;
+        }
+      
+        /* middle */
+      
+      }
+
+    @media (min-width: 1000px) {
+    
+      :root{
+    
+        --body-size: 30%;
+        --rickrolltext: 4vw;
+        --rickrollimg: 90%;
+      }
+    
+      /* Laptop/Desktop CSS */
+    
+    }
+
+.RickRollIMG{
+    border-radius: 10%;
+    width: var(--rickrollimg);
+    margin-top: 4vh;
+}
+
+h1{
+    font-size: var(--rickrolltext);
+    animation: colorRotate 6s linear 0s infinite;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+}
+
+.links{
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.links a{
+    width: 100%;
+}
+
+b{
+    font-size: 2vh;
+    color:#5e5e5e;
+}
+
+.twitter-share-button{
+    margin-left: 1vh;
+    margin-right: 1vh;
+    width: 1vw;
+
+}
+
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
