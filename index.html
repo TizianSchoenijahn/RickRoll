@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <audio src="/audio.mp3"></audio>
+    <script>    function start() {
+        var rickroll = document.getElementById("rickroll");
+        rickroll.style.display = "none";}
+    </script>
     <script>
     function showrickroll() {
     var rickroll = document.getElementById("rickroll");
@@ -21,7 +25,7 @@
     <title>Website</title>
 </head>
 
-<body>
+<body onload="start()">
     
     <div class="cookies" id="cookies">
         <h2>Cookies:</h2>
